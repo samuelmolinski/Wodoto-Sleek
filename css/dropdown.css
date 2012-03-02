@@ -1,0 +1,107 @@
+#menu {position:relative; z-index:200; }
+#menu li li{margin-right: 0; border-left: none; }
+
+.downarrowclass {	background:url(../images/down.png) no-repeat center right;  width:8px; height:6px; display:inline-block;   padding:3px 4px;}
+.rightarrowclass {background:url(../images/right.png) no-repeat center right;	padding: 10px;	position:absolute; right:10px;	}
+.dropdownBG {
+	background: #718293; /* Old browsers */
+	background: -moz-linear-gradient(top,  #718293 0%, #9ca9b9 1%, #718293 10%, #9ca9b9 48%, #9ca9b9 96%, #8497ab 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718293), color-stop(1%,#9ca9b9), color-stop(10%,#718293), color-stop(48%,#9ca9b9), color-stop(96%,#9ca9b9), color-stop(100%,#8497ab)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #718293 0%,#9ca9b9 1%,#718293 10%,#9ca9b9 48%,#9ca9b9 96%,#8497ab 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #718293 0%,#9ca9b9 1%,#718293 10%,#9ca9b9 48%,#9ca9b9 96%,#8497ab 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #718293 0%,#9ca9b9 1%,#718293 10%,#9ca9b9 48%,#9ca9b9 96%,#8497ab 100%); /* IE10+ */
+	background: linear-gradient(top,  #718293 0%,#9ca9b9 1%,#718293 10%,#9ca9b9 48%,#9ca9b9 96%,#8497ab 100%); /* W3C */
+	-pie-background: linear-gradient(top,  #718293 0%,#9ca9b9 1%,#718293 10%,#9ca9b9 48%,#9ca9b9 96%,#8497ab 100%); /*PIE*/
+	behavior: url(PIE/PIE.htc);
+	box-shadow: 3px 3px 2px 0px rgba(32, 32, 32, 0.7) inset, 0 0 3px rgba(223, 228, 234, 0.6);
+
+}
+/*Top level list items*/
+.dropdown ul li{position: relative; display: block; margin-right: 0; }
+
+/*Top level menu link items style*/
+.dropdown ul li a {text-decoration: none; font-size: 16px; }
+* html .dropdown ul li a{ /*IE6 hack to get sub menu links to behave correctly*/ display: inline-block; }
+ 
+/*1st sub level menu*/
+.dropdown ul li ul {position: absolute; left: 0; display: block; visibility: hidden; z-index:100; text-align:left; margin:-2px 0 0;float:left; clear:left;}
+.dropdown ul li ul li ul {margin:0; }
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.dropdown ul li ul li ul{top: 0;}
+
+/* Sub level menu links style */
+#navigation ul li ul { display:block; float:left; clear:left;}
+#navigation ul li ul li { display:block; float:left; clear:left;  margin: 0; padding:0;}
+#navigation ul li ul li a { font-size:12px; height: 30px; width:140px; display:block;}
+#navigation ul li ul li a:hover, #navigation ul li ul li:hover { color:#fff; border-bottom:none;  }
+#navigation ul li ul li a:hover  {  }
+.dropdown ul li ul li:last-child a, .dropdown ul li ul li:last-child a:hover {border:none;}
+.dropdown ul li ul li a:hover { color:#000; }
+
+
+
+
+.mainmenu {}
+.mainmenu>ul>li {width:100%; margin: 0 10px;padding:3px 5px;}
+
+.mainmenu>li.current-menu-item {
+	background: #8497ab; /* Old browsers */
+	background: -moz-linear-gradient(top, #8497ab 0%, #95acc1 4%, #718293 52%, #718293 90%, #95acc1 99%, #718293 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8497ab), color-stop(4%,#95acc1), color-stop(52%,#718293), color-stop(90%,#718293), color-stop(99%,#95acc1), color-stop(100%,#718293)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /* IE10+ */
+	background: linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /* W3C */
+	-pie-background: linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /*PIE*/
+	behavior: url(PIE/PIE.htc);
+	box-shadow: 3px 3px 3px rgba(51,51,51, .9);
+ 
+}
+.mainmenu>li {border-radius: 6px; behavior: url(PIE/PIE.htc);}
+.mainmenu>li:hover {box-shadow: 3px 3px 3px rgba(51,51,51, .9);}
+
+.dropdown ul {
+	border-radius: 0 6px 6px 6px;	
+	background: #718293; /* Old browsers */
+	background: -moz-linear-gradient(top,  #718293 0%, #7f93a5 50%, #718293 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718293), color-stop(50%,#7f93a5), color-stop(100%,#718293)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #718293 0%,#7f93a5 50%,#718293 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #718293 0%,#7f93a5 50%,#718293 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #718293 0%,#7f93a5 50%,#718293 100%); /* IE10+ */
+	background: linear-gradient(top,  #718293 0%,#7f93a5 50%,#718293 100%); /* W3C */
+	/*-pie-background: linear-gradient(top,  #718293 0%,#7f93a5 50%,#718293 100%); PIE*/
+	-pie-background: linear-gradient(#000000 ,#ffffff ); /*PIE*/
+	behavior: url(css/PIE.htc);
+	
+}
+.dropdown .mainmenu > li { }
+.dropdown ul li:hover>ul { visibility:visible;}
+.dropdown li ul { box-shadow: 3px 3px 3px rgba(51,51,51, .9);}
+.dropdown li ul li {line-height:2.5em; }
+.dropdown li ul li a { width:140px}
+
+.dropdown li:hover {
+	background: #8497ab; /* Old browsers */
+	background: -moz-linear-gradient(top, #8497ab 0%, #95acc1 4%, #718293 52%, #718293 90%, #95acc1 99%, #718293 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8497ab), color-stop(4%,#95acc1), color-stop(52%,#718293), color-stop(90%,#718293), color-stop(99%,#95acc1), color-stop(100%,#718293)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /* IE10+ */
+	background: linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /* W3C */
+	-pie-background: linear-gradient(top, #8497ab 0%,#95acc1 4%,#718293 52%,#718293 90%,#95acc1 99%,#718293 100%); /*PIE*/
+	behavior: url(PIE/PIE.htc);
+
+}
+
+.dropdown ul li ul li {}
+.dropdown ul li ul li:first-child  {border-top-right-radius: 6px;behavior: url(PIE/PIE.htc);}
+.dropdown ul li ul li:last-child  {border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;behavior: url(PIE/PIE.htc);}
+
+.downdown ul li ul li:hover {border: 1px solid #4d81b6;}
+.dropdown ul li ul li:first-child:hover  {border-top-right-radius: 6px;behavior: url(PIE/PIE.htc);}
+.dropdown ul li ul li:last-child:hover  {border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;behavior: url(PIE/PIE.htc);}
+.dropdown ul li ul li a {padding: 5px 10px; margin: 0; color:#fff; text-transform:none; display:block; font-size:14px;}
+
+.dropdown ul li:hover>ul li:hover>ul{ margin-left:160px;}
+

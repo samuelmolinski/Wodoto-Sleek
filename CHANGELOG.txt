@@ -1,0 +1,18 @@
+Prime Theme
+http://www.wpzoom.com/themes/prime
+
+
+CHANGELOG
+---------
+
+V 1.1.3 (6th August, 2011)
+	- An important security fix: /scripts/timthumb.php has been updated to 2.0
+
+v 1.1.2 (July 12, 2011)
+	- /functions/wpzoom_functions.php - fixed wpzoom_breadcrumbs() function to accommodate slideshow items
+
+v 1.1 (May 14, 2011)
+	- header.php - added a line to enable custom.css file
+	
+v 1.0 (May 5, 2011)
+	- initial release
